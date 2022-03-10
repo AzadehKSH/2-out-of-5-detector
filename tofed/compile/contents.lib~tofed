@@ -1,0 +1,6 @@
+21
+~C 1 "./../src/TestBench/tofed_TB.vhd" 43 testbench_for_tofed
+~E 1 "./../src/tofed.vhd" 29 tofed
+~A 1 "./../src/tofed.vhd" 39 arch
+~E 1 "./../src/TestBench/tofed_TB.vhd" 6 tofed_tb
+~A 1 "./../src/TestBench/tofed_TB.vhd" 9 TB_ARCHITECTURE

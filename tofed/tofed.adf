@@ -1,0 +1,51 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=tofed
+[Library]
+tofed=.\tofed\tofed.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice ECP2
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+tofed=.
+Active_lib=
+[Files]
+/tofed.vhd=-1
+/tofed.asdb=-1
+/tofed.awc=-1
+TestBench/tofed_TB.vhd=-1
+TestBench/tofed_TB_runtest.do=-1
+[Files.Data]
+.\src\tofed.vhd=VHDL Source Code
+.\src\tofed.asdb=Accelerated Waveform File
+.\src\tofed.awc=Accelerated Waveform Configuration
+.\src\TestBench\tofed_TB.vhd=VHDL Test Bench
+.\src\TestBench\tofed_TB_runtest.do=Macro
+[Groups]
+TestBench=1
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=tofed|arch|0 
+ShowHide=ShowTopLevel
+Selected=

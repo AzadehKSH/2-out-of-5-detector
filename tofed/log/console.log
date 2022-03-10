@@ -1,0 +1,104 @@
+# Design: Design tofed already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -work tofed -2002  $dsn/src/tofed.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\tofed_for_tabei\tofed\src\tofed.vhd
+# Compile Entity "tofed"
+# Compile Architecture "arch" of Entity "tofed"
+# Top-level unit(s) detected:
+# Entity => tofed
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+tofed tofed arch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6011 kB (elbread=1023 elab2=4832 kernel=154 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\tofed_for_tabei\tofed\src\wave.asdb
+#  3:40 PM, Saturday, January 23, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: tofed (arch)
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/tofed_for_tabei/tofed/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
+run @500ns
+# KERNEL: stopped at time: 500 ns
+run @600ns
+# KERNEL: stopped at time: 600 ns
+run @700ns
+# KERNEL: stopped at time: 700 ns
+run @800ns
+# KERNEL: stopped at time: 800 ns
+run @900ns
+# KERNEL: stopped at time: 900 ns
+run @1us
+# KERNEL: stopped at time: 1 us
+run @1.1us
+# KERNEL: stopped at time: 1100 ns
+run @1.2us
+# KERNEL: stopped at time: 1200 ns
+run @1.3us
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run @1.5us
+# KERNEL: stopped at time: 1500 ns
+run @1.6us
+# KERNEL: stopped at time: 1600 ns
+run @1.7us
+# KERNEL: stopped at time: 1700 ns
+run @1.8us
+# KERNEL: stopped at time: 1800 ns
+run @1.9us
+# KERNEL: stopped at time: 1900 ns
+run @2us
+# KERNEL: stopped at time: 2 us
+run @2.1us
+# KERNEL: stopped at time: 2100 ns
+# Adding file c:\My_Designs\tofed_for_tabei\tofed\src\tofed.asdb ... Done
+# Adding file c:\My_Designs\tofed_for_tabei\tofed\src\tofed.awc ... Done
+endsim
+#  Simulation has been stopped
+acom -O3 -work tofed -2002  $dsn/src/tofed.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\tofed_for_tabei\tofed\src\tofed.vhd
+# Compile Entity "tofed"
+# Compile Architecture "arch" of Entity "tofed"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work tofed -2002  $dsn/src/tofed.vhd $dsn/src/TestBench/tofed_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\tofed_for_tabei\tofed\src\tofed.vhd
+# Compile Entity "tofed"
+# Compile Architecture "arch" of Entity "tofed"
+# File: c:\My_Designs\tofed_for_tabei\tofed\src\TestBench\tofed_TB.vhd
+# Compile Entity "tofed_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "tofed_tb"
+# Compile Configuration "TESTBENCH_FOR_tofed"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
